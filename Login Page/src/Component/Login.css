@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 30% 30%, #232946 0%, #1a1a2e 60%, #121212 100%);
+}
+
+.login-box {
+  width: 320px;
+  padding: 40px 32px;
+  position: relative;
+  background: rgba(34, 34, 50, 0.97);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+  margin: 100px auto;
+  color: #f3f3f3;
+  backdrop-filter: blur(2px);
+}
+
+.login-box h2 {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #eebbc3;
+  letter-spacing: 1px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #a1a1a1;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 13px 13px 13px 42px;
+  border: 1px solid #393e46;
+  border-radius: 6px;
+  background: #232946;
+  color: #f3f3f3;
+  outline: none;
+  transition: border 0.3s, background 0.3s;
+}
+
+.input-box input:focus {
+  border: 1.5px solid #eebbc3;
+  background: #1a1a2e;
+}
+
+.input-box label {
+  position: absolute;
+  top: 13px;
+  left: 42px;
+  color: #a1a1a1;
+  transition: 0.3s;
+  pointer-events: none;
+  background: transparent;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 13px;
+  font-size: 12px;
+  color: #eebbc3;
+  background: transparent;
+  padding: 0 4px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.remember-forgot label {
+  font-size: 14px;
+  color: #f3f3f3;
+}
+
+.remember-forgot a {
+  font-size: 14px;
+  color: #eebbc3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: #ffd6e0;
+}
+
+.login-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #eebbc3 0%, #232946 100%);
+  color: #232946;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 2px 8px rgba(238, 187, 195, 0.15);
+}
+
+.login-button:hover {
+  background: linear-gradient(90deg, #ffd6e0 0%, #393e46 100%);
+  color: #1a1a2e;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.register-link p {
+  font-size: 14px;
+  color: #f3f3f3;
+}
+
+.register-link a {
+  color: #eebbc3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #ffd6e0;
+}
+
+:root {
+  color: #f3f3f3;
+  background-color: #232946;
+}
+
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
