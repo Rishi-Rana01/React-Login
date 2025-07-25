@@ -1,12 +1,72 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Login Page with Vite
 
-Currently, two official plugins are available:
+This project is a simple React application built with Vite, featuring a login and signup system using React Router for navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Login and Signup forms
+- Routing between `/login` and `/signup` using React Router
+- Modern React setup with Vite for fast development
+- Minimal CSS styling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Rishi-Rana01/React-Login.git
+   cd React-Login/Login Page
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the App
+Start the development server:
+```sh
+npm run dev
+# or
+yarn dev
+```
+Open your browser and go to `http://localhost:5173` (or the port shown in your terminal).
+
+### Project Structure
+```
+Login Page/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── Component/
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── Login.css
+│   └── assets/
+│       └── react.svg
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Usage
+- Visit `/login` for the login form
+- Visit `/signup` for the signup form
+- Use the navigation or direct URL to switch between forms
+
+## Technologies Used
+- React
+- Vite
+- React Router DOM
+- CSS
+
+## License
+This project is licensed under the MIT License.
